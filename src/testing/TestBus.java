@@ -1,6 +1,6 @@
 package testing;
 
-/* Uncomment the below code to test your application
+/* Uncomment the below code to test your application*/
 
 import model.Bus;
 import java.time.LocalDate;
@@ -13,13 +13,13 @@ public class TestBus {
 
 	@Test
 	public void testGetNoOfPersonMethod() {
-		bus.setNoOfPersons(5);
-		assertEquals(5, bus.getNoOfPersons());
-		bus.setNoOfPersons(1);
-		assertEquals(1, bus.getNoOfPersons());
+		bus.setNoofpersons(5);
+		assertEquals(5, bus.getNoofpersons());
+		bus.setNoofpersons(1);
+		assertEquals(1, bus.getNoofpersons());
 		try {
-			bus.setNoOfPersons(0);
-			bus.setNoOfPersons(-5);
+			bus.setNoofpersons(0);
+			bus.setNoofpersons(-5);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -41,10 +41,10 @@ public class TestBus {
 
 	@Test
 	public void testGetBusType() {
-		bus.setBusType("ACsleeper");
-		assertEquals("ACsleeper", bus.getBusType());
+		bus.setBustype("ACsleeper");
+		assertEquals("ACsleeper", bus.getBustype());
 		try {
-			bus.setBusType(null);
+			bus.setBustype(null);
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		}
@@ -60,4 +60,4 @@ public class TestBus {
 	}
 }
 
-*/
+

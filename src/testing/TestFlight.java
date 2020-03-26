@@ -1,6 +1,6 @@
 package testing;
 
-/* Uncomment the below code to test your application
+/* Uncomment the below code to test your application*/
 
 import model.Flight;
 import java.time.LocalDate;
@@ -14,13 +14,13 @@ public class TestFlight {
 
 	@Test
 	public void testGetNoOfPersonMethod() {
-		flight.setNoOfPersons(5);
-		assertEquals(5, flight.getNoOfPersons());
-		flight.setNoOfPersons(1);
-		assertEquals(1, flight.getNoOfPersons());
+		flight.setNoofpersons(5);
+		assertEquals(5, flight.getNoofpersons());
+		flight.setNoofpersons(1);
+		assertEquals(1, flight.getNoofpersons());
 		try {
-			flight.setNoOfPersons(0);
-			flight.setNoOfPersons(-5);
+			flight.setNoofpersons(0);
+			flight.setNoofpersons(-5);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -42,10 +42,10 @@ public class TestFlight {
 
 	@Test
 	public void testGetClassType() {
-		flight.setClassType("economy");
-		assertEquals("economy", flight.getClassType());
+		flight.setClasstype("economy");
+		assertEquals("economy", flight.getClasstype());
 		try {
-			flight.setClassType(null);
+			flight.setClasstype(null);
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		}
@@ -62,4 +62,3 @@ public class TestFlight {
 	}
 }
 
-*/

@@ -1,6 +1,6 @@
 package testing;
 
-/* Uncomment the below code to test your application
+/* Uncomment the below code to test your application*/
 
 import model.Hotel;
 import java.time.LocalDate;
@@ -14,13 +14,13 @@ public class TestHotel {
 
 	@Test
 	public void testGetNoOfPersonMethod() {
-		hotel.setNoOfPersons(5);
-		assertEquals(5, hotel.getNoOfPersons());
-		hotel.setNoOfPersons(1);
-		assertEquals(1, hotel.getNoOfPersons());
+		hotel.setNoofpersons(5);
+		assertEquals(5, hotel.getNoofpersons());
+		hotel.setNoofpersons(1);
+		assertEquals(1, hotel.getNoofpersons());
 		try {
-			hotel.setNoOfPersons(0);
-			hotel.setNoOfPersons(-5);
+			hotel.setNoofpersons(0);
+			hotel.setNoofpersons(-5);
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -42,10 +42,10 @@ public class TestHotel {
 
 	@Test
 	public void testGetRoomType() {
-		hotel.setRoomType("ac");
-		assertEquals("ac", hotel.getRoomType());
+		hotel.setRoomtype("ac");
+		assertEquals("ac", hotel.getRoomtype());
 		try {
-			hotel.setRoomType(null);
+			hotel.setRoomtype(null);
 		} catch (IllegalArgumentException e) {
 			e.printStackTrace();
 		}
@@ -62,4 +62,4 @@ public class TestHotel {
 	}
 
 }
-*/
+

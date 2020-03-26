@@ -1,6 +1,6 @@
 package testing;
 
-/* Uncomment the below code to test your application
+/* Uncomment the below code to test your application*/
 
 import model.Train;
 import java.time.LocalDate;
@@ -13,13 +13,13 @@ public class TestTrain {
 	
 	@Test
 	public void testGetNoOfPersonMethod() {
-		train.setNoOfPersons(5);
-		assertEquals(5,train.getNoOfPersons());
-		train.setNoOfPersons(1);
-		assertEquals(1,train.getNoOfPersons());
+		train.setNoofpersons(5);
+		assertEquals(5,train.getNoofpersons());
+		train.setNoofpersons(1);
+		assertEquals(1,train.getNoofpersons());
 		try {
-			train.setNoOfPersons(0);
-			train.setNoOfPersons(-5);
+			train.setNoofpersons(0);
+			train.setNoofpersons(-5);
 		}
 		catch(Exception e) {
 			e.printStackTrace();
@@ -64,4 +64,4 @@ public class TestTrain {
 	}
 }
 
-*/
+
